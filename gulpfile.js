@@ -141,10 +141,11 @@ gulp.task('compile:less', function() {
 // move css to dist folder
 gulp.task('compile:css', function() {
 	return gulp.src(config.paths.css)
-			.pipe(plumber({errorHandler: handleError}))
-			.pipe(concat('bundle.min.css'))
-			.pipe(gulp.dest('docs/css'))
-			.pipe(browserSync.stream());
+          .pipe(plumber({errorHandler: handleError}))
+          .pipe(concat('bundle.min.css'))
+          .pipe(gulp.dest('src/css'))
+          .pipe(gulp.dest('docs/css'))
+          .pipe(browserSync.stream());
 });
 
 gulp.task('compile:js', function() {

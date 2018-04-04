@@ -8,7 +8,7 @@ body {
 }
 
 header {
-	background: url(images/header-bg.jpg) center center no-repeat;
+	background: url(../img/header-bg.jpg) center center no-repeat;
 	background-size: cover;
 	color: #fff;
 	text-align: center;
